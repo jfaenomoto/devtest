@@ -4,20 +4,24 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Você foi escalado para fazer um sistema de cupons de um site de compras coletivas. A idéia é que
- * um cliente interessado em uma oferta gere um cupom e o estabelecimento comercial cadastrado dê baixa
- * nesse cupom usando um sistema. Os códigos dos cupons gerados devem ser no seguinte formato:
+ * Você foi escalado para fazer um sistema de cupons de um site de
+ * compras coletivas. A idéia é que um cliente interessado em uma oferta
+ * gere um cupom e o estabelecimento comercial cadastrado dê baixa nesse
+ * cupom usando um sistema. Os códigos dos cupons gerados devem ser no
+ * seguinte formato:
  * 
  *      oferta + "-" + número
  * 
- * onde oferta é uma string representando a oferta do site e o número é um contador específico para aquela
- * oferta.
+ * onde oferta é uma string representando a oferta do site e o número é
+ * um contador incremental específico para aquela oferta.
  * 
- * O sistema precisa ser a prova de fraudes: não deve ser possível validar um cupom gerado na mão sem usar o
- * sistema, ou permitir que um cupom seja usado duas vezes.
+ * O sistema precisa ser a prova de fraudes: não deve ser possível
+ * validar um cupom gerado na mão sem usar o sistema, ou permitir que um
+ * cupom seja usado duas vezes.
  * 
- * Um desenvolvedor foi contratado para especificar os casos de teste que esse sistema deve passar para que
- * o trabalho seja considerado entregue. Crie uma classe SistemaCupom que atenda a todos os casos, sem alterar
+ * Um desenvolvedor foi contratado para especificar os casos de teste que
+ * esse sistema deve passar para que o trabalho seja considerado entregue.
+ * Crie uma classe SistemaCupom que atenda a todos os casos, sem alterar
  * o código dessa classe de teste
  */
 public class SistemaCupomTest {
