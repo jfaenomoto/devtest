@@ -78,6 +78,16 @@ public class SistemaCupomTest {
         this.sistemaCupom.consumirCupom(cupom);
     }
     
+    @Test
+    public void naoGerarCupomJaConsumido() throws CupomInexistenteException {
+        String cupom = this.sistemaCupom.gerarCupom("Show");
+        this.sistemaCupom.gerarCupom("Show");
+        this.sistemaCupom.consumirCupom(cupom);
+        String proximoCupom = this.sistemaCupom.gerarCupom("Show");
+        
+        assertEquals("Show-3", proximoCupom);
+    }
+    
     @Before
     public void setup() {
         this.sistemaCupom = new SistemaCupom();
